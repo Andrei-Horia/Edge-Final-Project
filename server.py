@@ -74,6 +74,10 @@ while True:
     print(address)
     print(name, i)
 
+    #Create HTML Content
+    text = "<html>" + "\n" + "<title>Server-Client Connection</title>" + "\n" + "<body>" + "\n"
+
+    file.write(text)
     html_content.append("<p>" + name + " " + str(address) + "(" + str(i) + "):" + "</p>" + "\n")
 
     I = i
@@ -108,8 +112,21 @@ while True:
 
     #Print text in a file(HTML Format)
     for text in html_content:
-        print(text)
         file.write(text)
+
+    #Create HTML Content
+    text = "</body>" + "\n" + "</html>"
+    file.write(text)
+
+    file.close()
+
+    file = open("server.txt", "r+")
+
+    whole_text = ""
+    for line in file:
+        print(line)
+        whole_text += str(line)
+
     file.close()
 
     #Close client socket
