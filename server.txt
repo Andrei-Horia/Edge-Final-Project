@@ -1,23 +1,25 @@
 <html>
 <title>Server-Client Connection</title>
 <body>
-<p>Horia ('192.168.56.1', 54226)(1):</p>
-<p>Hello guys<\p>
-<p>What's up<\p>
-<p>Wanna come out<\p>
-<p>Andrei ('192.168.56.1', 54239)(2):</p>
-<p>Hey Horia<\p>
-<p>Yes <\p>
-<p>What time<\p>
-<p>Dodo ('192.168.56.1', 54244)(3):</p>
-<p>I m coming too<\p>
-<p>Horia ('192.168.56.1', 54226)(1):</p>
-<p>Meet me at 7<\p>
-<p>Is that okay<\p>
-<p>Cat ('192.168.56.1', 54249)(4):</p>
-<p>For me it is completly fine<\p>
-<p>Andrei ('192.168.56.1', 54239)(2):</p>
-<p>Yep for me too<\p>
-<p>See ya<\p>
+<p>Horia ('172.31.71.194', 65087)(1):</p>
+<p>Hey guys</p>
+<p>Andrei ('172.31.71.194', 65088)(2):</p>
+<p>Hey guyus</p>
+<p>Horia ('172.31.71.194', 65087)(1):</p>
+<p>Hey Andrei</p>
+<p>Wanna come out</p>
+<p>??</p>
+<p>Yeah Horia ('172.31.71.194', 65090)(3):</p>
+<p>Why now</p>
+<p>What time</p>
+<p>Dodo ('172.31.71.194', 65091)(4):</p>
+<p>I ll come too </p>
+<p>If that s okay</p>
+<p>Horia ('172.31.71.194', 65087)(1):</p>
+<p>Meet me at 7</p>
+<p>In the parc</p>
+<p>Rea ('172.31.71.194', 65093)(5):</p>
+<p>That is perfect</p>
+<p>See ya there</p>
 </body>
 </html>
