@@ -27,6 +27,10 @@ while True:
     if msj == "Exit":
         print("Type any message to confirm...")
 
+    #Exit server command
+    if msj == "EXIT":
+        print("Are you sure about this?")
+
     #Receive writen message
     data = s.recv(1024)
     print(data.decode())
