@@ -1,25 +1,27 @@
 <html>
 <title>Server-Client Connection</title>
-<body>
-<p>Horia ('172.31.71.194', 65087)(1):</p>
-<p>Hey guys</p>
-<p>Andrei ('172.31.71.194', 65088)(2):</p>
-<p>Hey guyus</p>
-<p>Horia ('172.31.71.194', 65087)(1):</p>
-<p>Hey Andrei</p>
-<p>Wanna come out</p>
-<p>??</p>
-<p>Yeah Horia ('172.31.71.194', 65090)(3):</p>
-<p>Why now</p>
-<p>What time</p>
-<p>Dodo ('172.31.71.194', 65091)(4):</p>
-<p>I ll come too </p>
-<p>If that s okay</p>
-<p>Horia ('172.31.71.194', 65087)(1):</p>
-<p>Meet me at 7</p>
-<p>In the parc</p>
-<p>Rea ('172.31.71.194', 65093)(5):</p>
-<p>That is perfect</p>
-<p>See ya there</p>
+<body style='background-color:#ffd9b3; margin-left:40px; margin-top:30px'>
+<h2 style='color:black'>Andrei ('192.168.56.1', 50784)(1):</h2>
+<h3 style='margin-left:20px; color:gray'>Hey guys</h3>
+<h3 style='margin-left:20px; color:gray'>Wanna come out</h3>
+<h2 style='color:black'>Dodo ('192.168.56.1', 50785)(2):</h2>
+<h3 style='margin-left:20px; color:gray'>Hey </h3>
+<h3 style='margin-left:20px; color:gray'>Yes I do</h3>
+<h3 style='margin-left:20px; color:gray'>What time Andrei ??</h3>
+<h2 style='color:black'>Rea ('192.168.56.1', 50786)(3):</h2>
+<h3 style='margin-left:20px; color:gray'>Yeah me too</h3>
+<h2 style='color:black'>Andrei ('192.168.56.1', 50784)(1):</h2>
+<h3 style='margin-left:20px; color:gray'>7 ?? </h3>
+<h3 style='margin-left:20px; color:gray'>pm </h3>
+<h2 style='color:black'>Dodo ('192.168.56.1', 50785)(2):</h2>
+<h3 style='margin-left:20px; color:gray'>That is fine for me</h3>
+<h3 style='margin-left:20px; color:gray'>And where ??</h3>
+<h3 style='margin-left:20px; color:gray'>Exot</h3>
+<h2 style='color:black'>Luca ('192.168.56.1', 50790)(4):</h2>
+<h3 style='margin-left:20px; color:gray'>Let's meet at stb </h3>
+<h3 style='margin-left:20px; color:gray'>Is that okay ?/</h3>
+<h2 style='color:black'>Dan  ('192.168.56.1', 50791)(5):</h2>
+<h3 style='margin-left:20px; color:gray'>Yep</h3>
+<h3 style='margin-left:20px; color:gray'>See you there </h3>
 </body>
 </html>

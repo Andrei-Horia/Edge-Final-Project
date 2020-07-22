@@ -75,10 +75,10 @@ while True:
     print(name, i)
 
     #Create HTML Content
-    text = "<html>" + "\n" + "<title>Server-Client Connection</title>" + "\n" + "<body>" + "\n"
+    text = "<html>" + "\n" + "<title>Server-Client Connection</title>" + "\n" + "<body style='background-color:#ffd9b3; margin-left:40px; margin-top:30px'>" + "\n"
 
     file.write(text)
-    html_content.append("<p style='color:grey'>" + name + " " + str(address) + "(" + str(i) + "):" + "</p>" + "\n")
+    html_content.append("<h2 style='color:black'>" + name + " " + str(address) + "(" + str(i) + "):" + "</h2>" + "\n")
 
     I = i
     i = copy_i
@@ -105,7 +105,7 @@ while True:
         data = data.decode()
 
         #Create HTML Elements in a list
-        text = "<p>" + data + "</p>" +"\n"
+        text = "<h3 style='margin-left:20px; color:gray'>" + data + "</h3>" +"\n"
         html_content.append(text)
         print(data)
 
