@@ -1,5 +1,4 @@
 import socket
-from http.server import BaseHTTPRequestHandler, HTTPServer
 
 file = open("server.txt", "r+")
 
@@ -10,19 +9,6 @@ s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 #Bind and listen to client
 s.bind((socket.gethostname(), 9039))
 s.listen(5)
-
-#Create class that prints the file in a webserver
-class CMUQEdgeServer(BaseHTTPRequestHandler):
-    def make_content(self):
-        return whole_text
-
-    def do_GET(self):
-        page_html = self.make_content()
-        self.send_response(200)
-        self.send_header("Content-type", "text/html")
-        self.end_headers()
-        self.wfile.write(page_html.encode())
-
 
 #All varaibles are defined here
 names = []
@@ -92,7 +78,7 @@ while True:
     text = "<html>" + "\n" + "<title>Server-Client Connection</title>" + "\n" + "<body>" + "\n"
 
     file.write(text)
-    html_content.append("<p>" + name + " " + str(address) + "(" + str(i) + "):" + "</p>" + "\n")
+    html_content.append("<p style='color:grey'>" + name + " " + str(address) + "(" + str(i) + "):" + "</p>" + "\n")
 
     I = i
     i = copy_i
@@ -134,15 +120,6 @@ while True:
 
     file.close()
 
-    file = open("server.txt", "r+")
-
-    whole_text = ""
-    for line in file:
-        print(line)
-        whole_text += str(line)
-
-    file.close()
-
     #Close client socket
     socket_client.close()
 
@@ -150,5 +127,4 @@ while True:
         break
 
 s.close()
-myserver = HTTPServer(("0.0.0.0", 9039),CMUQEdgeServer)
-myserver.serve_forever()
+
