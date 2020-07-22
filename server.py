@@ -1,4 +1,6 @@
 import socket
+import threading
+from http.server import BaseHTTPRequestHandler, HTTPServer
 
 file = open("server.txt", "r+")
 
@@ -11,13 +13,28 @@ s.bind((socket.gethostname(), 9039))
 s.listen(5)
 
 #All varaibles are defined here
+#List of names
 names = []
+
+#The list that will store each html element
 html_content = []
+
+#Name of the client
 name = ""
+
+#Address of the client
 address = ""
+
+#Index
 index = 0
+
+#Index of the client
 i = 0
+
+#Copy the i
 copy_i = 0
+
+#Verify EXIT command
 OK = 0
 
 #Each name will have an unique address
@@ -74,12 +91,22 @@ while True:
     print(address)
     print(name, i)
 
+
     #Create HTML Content
     text = "<html>" + "\n" + "<title>Server-Client Connection</title>" + "\n" + "<body style='background-color:#ffd9b3; margin-left:40px; margin-top:30px'>" + "\n"
-
     file.write(text)
-    html_content.append("<h2 style='color:black'>" + name + " " + str(address) + "(" + str(i) + "):" + "</h2>" + "\n")
 
+    #Create top HTML Content
+    #First three things that will be print out the name, the index, and the address of the client who joined in
+
+    text =  "<h1>Welcome to the Chat<h1>"
+    file.write(text)
+
+    html_content.append("<h2 style='color:black'>" + name + "</h2>" + "\n")
+    html_content.append("<font size='0.5' style='color:grey'>" + str(address) + "(" + str(i) + "):" + "</font>")
+
+    #Reassign the value of i(index) to the one where it was supposted to be
+    #Basically, when somebody types an already existing name, the index will reset. We are not supposted to lose the counting
     I = i
     i = copy_i
 
@@ -98,6 +125,7 @@ while True:
         if data.decode() == "EXIT":
             OK=1
             break
+
         #Send data back to client
         socket_client.sendall(data)
 

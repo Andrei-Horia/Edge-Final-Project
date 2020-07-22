@@ -6,9 +6,13 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((socket.gethostname(), 9039))
 
 #Type Name
+
+#Initial Data
 data = s.recv(1024)
 data = data.decode()
 print(data)
+
+#Send data to response
 s.sendall(input().encode())
 
 #Receive intial data
